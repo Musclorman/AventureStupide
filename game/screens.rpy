@@ -248,7 +248,7 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Retour") action Rollback()
+            #textbutton _("Retour") action Rollback()
             textbutton _("Historique") action ShowMenu('history')
             textbutton _("Avance rapide") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
@@ -296,7 +296,7 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Nouvelle partie") action Start()
+            textbutton _("Nouveau jeu") action Start()
 
         else:
 
@@ -505,7 +505,7 @@ style game_menu_outer_frame:
     background "gui/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
-    xsize 117
+    xsize 80
     yfill True
 
 style game_menu_content_frame:

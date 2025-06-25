@@ -26,7 +26,7 @@ define gui.show_name = True
 
 ## La version du jeu.
 
-define config.version = "0.1"
+define config.version = "0.1a"
 
 
 ## Texte placé sur l'écran "À propos" du jeu. Placez le texte entre triples
@@ -130,6 +130,9 @@ define config.window_hide_transition = Dissolve(.2)
 
 ## Préférences par défaut ######################################################
 
+## Pas de rollback
+define config.rollback_enabled = False
+
 ## Contrôle la vitesse du texte. La valeur par défaut, 0, est infinie. Toute
 ## autre valeur est le nombre de caractères tapés par seconde.
 
@@ -204,6 +207,7 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.classify('**/renpy-graphviz*', None)
 
     ## Pour archiver les fichiers, choisissez la valeur « archive ».
 

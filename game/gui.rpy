@@ -72,19 +72,19 @@ define gui.name_text_font = "DejaVuSans.ttf"
 define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## La taille normale pour les dialogues.
-define gui.text_size = 14
+define gui.text_size = 16
 
 ## La taille pour le nom des personnages.
 define gui.name_text_size = 16
 
 ## La taille du texte dans l’interface de jeu.
-define gui.interface_text_size = 12
+define gui.interface_text_size = 10
 
 ## La taille des libellés dans l’interface de jeu.
-define gui.label_text_size = 12
+define gui.label_text_size = 16
 
 ## La taille du texte dans la zone de notification.
-define gui.notify_text_size = 10
+define gui.notify_text_size = 12
 
 ## La taille du titre du jeu.
 define gui.title_text_size = 24
@@ -103,7 +103,7 @@ define gui.game_menu_background = "gui/game_menu.png"
 ## fois.
 
 ## La hauteur de la fenêtre contenant les dialogues.
-define gui.textbox_height = 90
+define gui.textbox_height = 100
 
 ## L’emplacement vertical de la zone de texte à l’écran. 0.0 pour le haut, 0.5
 ## pour le centre et 1.0 pour le bas.
@@ -113,8 +113,8 @@ define gui.textbox_yalign = 1.0
 ## L’emplacement relatif à la zone de texte du nom du personnage en train de
 ## parler. La valeur peut être un nombre entier de pixels depuis la gauche ou le
 ## haut ou 0.5 pour le centre.
-define gui.name_xpos = 100
-define gui.name_ypos = 0
+define gui.name_xpos = 0.1
+define gui.name_ypos = 0.0
 
 ## L’alignement horizontal du nom du personnage. La valeur peut être 0.0 pour un
 ## alignement à gauche, 0.5 pour le centrer et 1.0 pour un alignement à droite.
@@ -127,7 +127,7 @@ define gui.namebox_height = None
 
 ## Les bordures de la zone contenant le nom du personnage dans l’ordre suivant
 ## gauche, haut, droite, bas.
-define gui.namebox_borders = Borders(5, 5, 5, 5)
+define gui.namebox_borders = Borders(   0, 0, 0, 0)
 
 ## Si « True » (vrai), l’arrière plan de zone du nom sera en mosaïque, si
 ## « False »(faux), l’arrière plan de la zone du nom sera mis à l’échelle.
@@ -140,7 +140,7 @@ define gui.dialogue_xpos = 30
 define gui.dialogue_ypos = 20
 
 ## La largeur maximale en pixels de la zone de dialogue.
-define gui.dialogue_width = 400
+define gui.dialogue_width = 560
 
 ## L’alignement horizontal de la zone de dialogue. La valeur peut être 0.0 pour
 ## un alignement à gauche, 0.5 pour le centrer et 1.0 pour un alignement à
@@ -189,7 +189,7 @@ define gui.button_text_xalign = 0.0
 ##
 ## Ces personnalisations sont utilisées par l’interface par défaut :
 
-define gui.radio_button_borders = Borders(8, 2, 2, 2)
+define gui.radio_button_borders = Borders(2, 2, 2, 2)
 
 define gui.check_button_borders = Borders(8, 2, 2, 2)
 
@@ -261,7 +261,7 @@ define gui.file_slot_rows = 2
 
 ## La position sur le côté gauche des boutons de navigation, relatif au côté
 ## gauche de l'écran.
-define gui.navigation_xpos = 15
+define gui.navigation_xpos = 10
 
 ## La position vertical du l’indicateur de saut des dialogues.
 define gui.skip_ypos = 5
@@ -273,16 +273,16 @@ define gui.notify_ypos = 20
 define gui.choice_spacing = 10
 
 ## Boutons dans la section de navigation du menu principal et du menu de jeu.
-define gui.navigation_spacing = 2
+define gui.navigation_spacing = 5
 
 ## Contrôle l’espacement entre les préférences.
-define gui.pref_spacing = 5
+define gui.pref_spacing = 0
 
 ## Contrôle l’espacements entre les boutons de préférences.
-define gui.pref_button_spacing = 0
+define gui.pref_button_spacing = 1
 
 ## L’espacement entre les boutons de page.
-define gui.page_spacing = 0
+define gui.page_spacing = 1
 
 ## L’espacement entre les emplacements de sauvegarde.
 define gui.slot_spacing = 5
@@ -298,7 +298,7 @@ define gui.main_menu_text_xalign = 1.0
 ## pas présents.
 
 ## Frames génériques.
-define gui.frame_borders = Borders(2, 2, 2, 2)
+define gui.frame_borders = Borders(1, 1, 1, 1)
 
 ## Le cadre qui est utilisé par les écrans de confirmation.
 define gui.confirm_frame_borders = Borders(17, 17, 17, 17)

@@ -25,7 +25,7 @@ label zetemort:
     if item=="fusil":
         dd "Alors Cowboy? On fait joujou avec un gros flinflingue sans savoir s'en servir? Tu sais que tu aurais pu te faire tuer avec ça..."
         dd "Ah bah oui, c'est ce qui t'es arrivé! Suis-je bête!"
-    if item==item="brute":
+    if item=="brute":
         dd "Ah... Un bourrin qui défonce des portes! Tu sais que tu aurais pu juste utiliser la clé de ta porte? Non? Bah tu viens de mourir comme un abruti alors que tu aurais pu survivre!"
     if mort == 1 :
         dd "J'aime bien ton air abrutis et ton regard vide. Un homme tel que toi doit bien avoir un petit nom stylé qui va avec cette allure de zombie!"
@@ -49,7 +49,7 @@ label zetemort:
                 dd "Bon, comme t'a l'air marrant je vais te faire remonter le temps afin que tu puisse revivre et éviter de mourir comme un idiot."
     if mort > 0 :
         dd "Par le pouvoir du crâne ancestral qui est le mien, je te réssuscite et te renvoie dans le passé! A plus dans l'bus [nom]!"
-    if mort > 5:
+    if mort >= 5:
+        dd "Ah et vu que t'avait pas trouvé ta clé je vais te la relancer en pleine tronche en y allant fort cette fois! Tu devrait pas la louper!"
         $ cle=True
-        dd "Vu que t'avait pas trouvé ta clé je vais te la relancer en pleine tronche en y allant fort cette fois! Tu devrait pas la louper!"
     jump intro

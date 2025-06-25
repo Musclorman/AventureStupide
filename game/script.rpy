@@ -2,6 +2,7 @@
 
 # Déclarez sous cette ligne les images, avec l'instruction 'image'
 # ex: image eileen heureuse = "eileen_heureuse.png"
+image debut = "debut.png"
 
 # Déclarez les personnages utilisés dans le jeu.
 # define e = Character('Eileen', color="#c8ffc8")
