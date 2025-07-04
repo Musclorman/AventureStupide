@@ -17,7 +17,6 @@ define dd = Character(_("Faucheuse"), color="#ea00ff", image="image_faucheuse")
 
 # Le jeu commence ici
 label intro:
-    $ renpy.fix_rollback()
     $ item=""
     scene intro
     if cle==True:
@@ -30,7 +29,6 @@ label intro:
     menu:
         "C'est un bon jour pour sortir de son appartement mais que faire."
         "Prendre un petit dejeuner":
-            $ renpy.fix_rollback()
             scene Cuisine
             "Vous allez en direction de la cuisine a la vitesse d'une limace au galop."
             menu:
