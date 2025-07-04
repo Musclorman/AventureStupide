@@ -1,0 +1,11 @@
+.vscode
+.pytest_cache
+log.txt
+errors.txt
+renpy-graphviz*
+traceback.txt
+project.json
+.mypy_cache
+.pytest_cache
+.vs
+.vscode
