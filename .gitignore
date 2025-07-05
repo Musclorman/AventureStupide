@@ -10,3 +10,5 @@ project.json
 .vs
 .vscode
 cache
+game/cache
+game/saves
