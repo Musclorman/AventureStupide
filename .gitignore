@@ -9,3 +9,4 @@ project.json
 .pytest_cache
 .vs
 .vscode
+cache
