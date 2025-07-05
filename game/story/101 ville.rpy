@@ -26,10 +26,10 @@ label ville1:
         scene ville
         "Vous vous réveillez encore une fois dans le caniveau. A ce rythme la, vous allez finir par y vivre. Dire que le bar est juste a 5 minutes a pied..."
     menu:
-         "Vous pouvez y aller en passant par le parc ou en prenant la ruelle glauque et sombre qui est derrière votre immeuble.":
-            "Aller au parc":
-                "Vous décidez de prendre le chemin du parc, c'est plus agréable et moins glauque."
-                jump parc
-            "aller dans la ruelle":
-                "Vous décidez de prendre la ruelle, c'est plus rapide mais c'est glauque et sombre et vous n'aimez pas trop ça."
-                jump ruelle
+        "Vous pouvez y aller en passant par le parc ou en prenant la ruelle glauque et sombre qui est derrière votre immeuble."
+        "Aller au parc":
+            "Vous décidez de prendre le chemin du parc, c'est plus agréable et moins glauque."
+            jump parc
+        "aller dans la ruelle":
+            "Vous décidez de prendre la ruelle, c'est plus rapide mais c'est glauque et sombre et vous n'aimez pas trop ça."
+            jump ruelle

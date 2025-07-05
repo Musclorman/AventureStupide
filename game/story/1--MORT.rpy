@@ -1,4 +1,3 @@
-image cavemort  = At("bg/CaveMort.jpeg")
 label zetemort0:
     scene cavemort
     $ mort += 1
@@ -52,7 +51,6 @@ label zetemort0:
         dd "Ah et vu que t'avait pas trouvé ta clé je vais te la relancer en pleine tronche en y allant fort cette fois! Tu devrait pas la louper!"
         $ cle=True
     jump intro
- At("bg/CaveMort.jpeg")
 label zetemort1:
     scene cavemort
     $ mort += 1
@@ -60,4 +58,4 @@ label zetemort1:
         dd "Serieux [nom] je t'aide, je te donne ta clé et tu meurs 2 minutes après? T'a pas une malédiction ou un truc du genre? Appelle un exorciste!"
         dd "Bon ba... Je te renvois dans ta rue pour que tu puisse mourir de nouveau. Moi je t'observe de loin avec mes popcorns et je me marre comme un fou!"
     if mort == 2 :
-    dd "Je change de formule et j'invoque le grand portail pour te ramener la ou tu devrait être. Au revoir dans l'autocar [nom]!"
+        dd "Je change de formule et j'invoque le grand portail pour te ramener la ou tu devrait être. Au revoir dans l'autocar [nom]!"
