@@ -13,3 +13,5 @@ cache
 log.txt
 game/cache
 game/saves
+android.keystore
+bundle.keystore
