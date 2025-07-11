@@ -34,9 +34,9 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.1a</string>
+	<string>0.2a</string>
 	<key>CFBundleVersion</key>
-	<string>2025.0625.212808</string>
+	<string>2025.0711.153553</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.simulation-games</string>
 	<key>NSHighResolutionCapable</key>

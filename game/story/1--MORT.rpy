@@ -57,5 +57,9 @@ label zetemort1:
     if mort == 1 :
         dd "Serieux [nom] je t'aide, je te donne ta clé et tu meurs 2 minutes après? T'a pas une malédiction ou un truc du genre? Appelle un exorciste!"
         dd "Bon ba... Je te renvois dans ta rue pour que tu puisse mourir de nouveau. Moi je t'observe de loin avec mes popcorns et je me marre comme un fou!"
-    if mort == 2 :
         dd "Je change de formule et j'invoque le grand portail pour te ramener la ou tu devrait être. Au revoir dans l'autocar [nom]!"
+        jump ville
+    if mort >= 2 :
+        dd "Coucou [nom] je suis toujours là!"
+        dd "J'invoque toujours ce grand portail pour te ramener la ou tu devrait être. Au revoir dans l'autocar [nom]!"
+        jump ville

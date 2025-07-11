@@ -22,14 +22,18 @@ label ville1:
         scene ville
         "Vous vous réveillez dabs le caniveau comme a la fin d'une soirée trop arrosé. Vous ne savez pas comment vous êtes arrivé la mais vous avez soif!"
         "Vous vous relevez et vous vous rappellez que vous etiez en chemin pour boir un coup au bar."
+        if cle==True:
+            "Vous remarquez alors le ballon rouler... Il est encore sur vous? Bon... Il fait soif donc va falloir trouver votre bar!"
     if mort>=2:
         scene ville
         "Vous vous réveillez encore une fois dans le caniveau. A ce rythme la, vous allez finir par y vivre. Dire que le bar est juste a 5 minutes a pied..."
+        if cle==True:
+            "Vous remarquez que le squelette visiblement pas très doué vous a renvoyé avec le ballon du gosse! Peut-être que c'est un doublon et qu'il vous aidera a arriver a votre destination."
     menu:
         "Vous pouvez y aller en passant par le parc ou en prenant la ruelle glauque et sombre qui est derrière votre immeuble."
         "Aller au parc":
             "Vous décidez de prendre le chemin du parc, c'est plus agréable et moins glauque."
             jump parc
-        "aller dans la ruelle":
+        "Aller dans la ruelle":
             "Vous décidez de prendre la ruelle, c'est plus rapide mais c'est glauque et sombre et vous n'aimez pas trop ça."
             jump ruelle

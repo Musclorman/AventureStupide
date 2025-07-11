@@ -26,7 +26,7 @@ define gui.show_name = True
 
 ## La version du jeu.
 
-define config.version = "0.2pre-alpha"
+define config.version = "0.2a"
 
 
 ## Texte placé sur l'écran "À propos" du jeu. Placez le texte entre triples
@@ -208,6 +208,8 @@ init python:
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
     build.classify('**/renpy-graphviz*', None)
+    build.classify('**/MakeGit*', None)
+    
 
     ## Pour archiver les fichiers, choisissez la valeur « archive ».
 
@@ -220,6 +222,7 @@ init python:
 
     build.documentation('*.html')
     build.documentation('*.txt')
+    build.documentation('*.md')
 
 
 ## Une clé de licence Google Play est requise pour permettre les achats depuis
