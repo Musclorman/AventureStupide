@@ -55,3 +55,10 @@ transform chute:
     zoom 1
     linear 0 yalign 1.0
     linear 2 yalign 0.2
+
+transform sczoom:
+    xalign 0.5
+    zoom 0
+    yalign 0.5
+    ypos 1.0
+    linear 2 zoom 1 ypos 0.5

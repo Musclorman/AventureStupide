@@ -9,3 +9,7 @@ project.json
 .pytest_cache
 .vs
 .vscode
+cache
+log.txt
+game/cache
+game/saves

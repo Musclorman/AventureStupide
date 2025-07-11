@@ -1,8 +1,6 @@
-image cavemort  = At("bg/CaveMort.jpeg")
-label zetemort:
+label zetemort0:
     scene cavemort
     $ mort += 1
-    $ renpy.fix_rollback()
     if mort == 1 :
         "Vous vous trouvez dans un genre d'endroit sombre et froid. Vvous voyez un genre de squelette sinistre s'avancer vers vous."
         dd "Salut. Je ne t'ai jamais vu ici. Tu viens de mourir ? Tu sait ou t'es au moins?"
@@ -53,3 +51,15 @@ label zetemort:
         dd "Ah et vu que t'avait pas trouvé ta clé je vais te la relancer en pleine tronche en y allant fort cette fois! Tu devrait pas la louper!"
         $ cle=True
     jump intro
+label zetemort1:
+    scene cavemort
+    $ mort += 1
+    if mort == 1 :
+        dd "Serieux [nom] je t'aide, je te donne ta clé et tu meurs 2 minutes après? T'a pas une malédiction ou un truc du genre? Appelle un exorciste!"
+        dd "Bon ba... Je te renvois dans ta rue pour que tu puisse mourir de nouveau. Moi je t'observe de loin avec mes popcorns et je me marre comme un fou!"
+        dd "Je change de formule et j'invoque le grand portail pour te ramener la ou tu devrait être. Au revoir dans l'autocar [nom]!"
+        jump ville
+    if mort >= 2 :
+        dd "Coucou [nom] je suis toujours là!"
+        dd "J'invoque toujours ce grand portail pour te ramener la ou tu devrait être. Au revoir dans l'autocar [nom]!"
+        jump ville
