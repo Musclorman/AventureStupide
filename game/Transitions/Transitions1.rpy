@@ -18,13 +18,19 @@ transform UtoD:
 
 
 transform DtoU:
-    linear 2 xalign 0.5
+    xalign 0.5
     zoom 1
     yalign 1.0
     linear 2 yalign 0.0
 
+transform DtoUxlow:
+    xalign 0.5
+    zoom 1
+    yalign 1.0
+    linear 20 yalign 0.0
+
 transform DtoUlow:
-    linear 2 xalign 0.5
+    xalign 0.5
     zoom 1
     yalign 1.0
     time 1
@@ -32,7 +38,7 @@ transform DtoUlow:
 
 
 transform UtoDlow:
-    linear 2 xalign 0.5
+    xalign 0.5
     zoom 1
     yalign 0.0
     time 1

@@ -1,7 +1,10 @@
 label ruelle:
     image RuelleSombre = At("BG/RuelleSombre.jpeg")
+    image Typelouche = At("PNJ/TypeLouche.png", DtoUlow)
     scene RuelleSombre
-    "D'ailleurs vous sentez une présence derrière vous... Vous vour retournez et voyez un type louche armé d'une batte de baseball avancer discrètement vers vous..."
+    "D'ailleurs vous sentez une présence derrière vous..."
+    show Typelouche
+    "Vous vour retournez et voyez un type louche armé d'une batte de baseball avancer discrètement vers vous..."
     menu:
         "Vous n'y connaissez rien au baseball mais vous avez une petite idée de ce qui vous attend si vous ne faites rien"
         "Courir":
@@ -22,7 +25,7 @@ label ruelle:
             "Le type louche vous fracasse le crâne, vide vos poches et s'en vas tranquillement."
             jump zetemort
         "Jouer avec le ballon que vous avez pris avant de vous faire déchiqueter" if cle==True:
-            "Vous donnez un giga coup de pied dans le ballon... Et fracassez ma vitre d'un appartement. Vous courrez en esperant au moins que ca fera diversion."
+            "Vous donnez un giga coup de pied dans le ballon... Et fracassez ma vitre d'un appartement. Vous courrez en esperant au moins que ca fasse diversion."
             "Moins de 10 secondes après le bris de verre une vieille dame en robe de chambre sort sa tête de la vitre brisé... Puis lance un vieil obus par la fenêtre."
             "La secousse provoqué vous envois sur le sol mais vous n'avez rien. Vous vous relevez et vous voyez le type louche encore vivent..."
             "mais par terre et avec sa batte et ses jambes en lanbeaux. Vous partez alors en direction du bar sans vous retourner."

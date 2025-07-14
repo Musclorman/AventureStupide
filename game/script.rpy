@@ -16,7 +16,6 @@ label start:
     $ cle=False
     $ item = ""
     $ chap=0
-    $ renpy.fix_rollback()
     "Bienvenue dans Aventure Stupide, un jeu a l'humour décalé."
     "Le texte a été écrit par un humain mais les images ont été réalisés par IA faute de compétences en dessin."
     "Des musiques et des sons seront peut-être créés au clavier MIDI et  ajoutées plus tard mais pour l'instant il n'y en a pas. quand aux futurs chapitres on verra"

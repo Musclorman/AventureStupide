@@ -1,5 +1,5 @@
 image win = At("BG/win.jpeg", updownmiddlezoom)
-image voisine  = At("PNJ/Voisine.webp", top)
+image voisine = At("PNJ/Voisine.webp", top)
 image zozio  = At("PNJ/Zozio.webp", top)
 
 
@@ -12,7 +12,7 @@ label chasseurfenetre:
     menu:
         "qu'allez-vous bien tuer pour commencer la journée"
         "Transformer la voisine en passoire":# renpy-graphviz: IGNORE
-            $ renpy.fix_rollback()
+
             show voisine
             "Vous prenez un air déterminé, vous ouvez la fenêtre et vous descendez la voisine avec votre fusil... A l'envers. Vous avez pris une balle entre les 2 yeux."
             "Fallait regarder dans quel sens vous teniez votre fusil mais vous n'ête pas le premier a mourir stupidement. N'est-ce pas?"
