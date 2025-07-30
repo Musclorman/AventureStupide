@@ -1,5 +1,6 @@
 label extbar:
     image extbarscene = At("BG/Barext.jpg", DtoUxlow)
+    image barscene = At("BG/Bar.jpeg", UtoDxlow)
     scene extbarscene
     image voisine = At("PNJ/Voisine.webp", top)
     define voisine = Character("Voisine gothique", color="#ff3700")
@@ -20,6 +21,7 @@ label extbar:
         "Non j'achète un magasine":
             voisine "Tu sait lire maintenant ?"
         "Juste un café":
+            $ item = "cafe"
             voisine "Bien sur... Et ton café tu va le couper avec des shots de vodka... Ou peut-être de rhum."
         "J'ai eut une dure journée et j'ai besoin de me détendre":
             voisine "On est que le matin... Si ca se trouve t'a pas dormis de la nuit et tu as déjà bu avant de sortir de chez toi."
@@ -43,5 +45,35 @@ label extbar:
         "Non":
             "Vous avez raison, c'est inutile de le préciser. C'est répétitif a force."
     "Plus que quelques mètres et vous serez enfin au bar. mais peut-être que vous voudriez savoir ce qui vous attend la-bas? Ba... Vous saurez bien assez tôt..."
+    scene barscene
     "Vous entrez dans le bar et vous vous asseyez au comptoir."
-    "A suivre car en cours d'écriture"
+    "Le barman vous salue et vous demande ce que vous voulez."
+    menu:
+        "Alors vous commandez..."
+        "Un café":
+            "Le barman vous sert un café noir et amer. Vous le buvez d'un trait."
+            if item == "cafe":
+                "Dommage que votre voisine soit trop occupée pour voir que vous ne prenez pas que des appéros!"
+            $ item = "cafe"
+        "Un mélange vodka-rhum":
+            "Le barman vous sert un mélange de vodka et de rhum. Vous le buvez d'un trait."
+            if item == "cafe":
+                "Et oui, vous avez bien bu un mélange de vodka et de rhum en prétendant prendre juste un café! On ne vous changera jamais!"
+                "Mais rassurez-vou: Votre voisine n'avait pas totalrment raison vu que vous n'avez pas bu une seule goute de café."
+            $ item = "vodka-rhum"
+    "Mais il semblerais que votre [item] avait un goût étrange. Vous vous demandez si le barman a mis quelque chose de spécial dedans..."
+    "Mais vu que le bar tangue comme un bateau en pleine tempête vous décider alors de sortir pour aller voir ce qui se passe dehors."
+    jump lsd1
+
+label bar2:
+    scene NOBG
+    image = at("NOBG.png", none)
+    if item == "cafe":
+        "Barman" "DEBOUT! LE COMPTOIR N'EST PAS UN LIT!"
+    if item == "vodka-rhum":
+        "Barman" "DEBOUT IVROGNE! LE COMPTOIR N'EST PAS UN LIT!"
+    scene barscene
+    "Vous vous réveillez dans le bar, allongé sur le comptoir a coté de votre[item] vide. Vous avez l'impression d'avoir dormi pendant des heures."
+    "Alors que vous essayez de vous lever, le barman attrape par les chevilles et vous traine comme un linge sale jusqu'au trottoir avant de claquer la porte en jurant."
+    scene extbarscene
+    "En cours d'écriture..."
