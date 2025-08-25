@@ -20,6 +20,7 @@ label intro:
     $ item=""
     scene intro
     if cle==True:
+        play sound "FX/Boum.ogg"
         "BANG! Vous vous réveillez en sursaut dans votre lit. Quelqu'un vous a lancé vos clé d'appartement en pleine figure... Mais vous ne voyez personne! A moitier sonné, vous regardez autours de vous..."
     if mort == 0:
         pause 10
@@ -38,10 +39,12 @@ label intro:
                     "Aller a la fenêtre avec de quoi zigouiller du zozio":
                         jump chasseurfenetre
         "Retourner au lit":
-            $ renpy.fix_rollback()
+            play music "Music/Dodo.ogg"
             "Vous vous retournez dans votre lit et vous vous endormez."
             "Mais... Qu'est-ce que c'est ?"
             show meteorite
+            pause 1
+            play sound "FX/Chute.ogg"
             "Une météorite??? Elle tombe du ciel et vous écrase. COUIC!"
             $ item="meteorite"
             jump zetemort

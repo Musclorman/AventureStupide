@@ -1,5 +1,6 @@
 label zetemort:
     image cavemort  = At("bg/CaveMort.jpeg")
+    stop music fadeout 1
     if chap==0:
         jump zetemort0
     if chap==1:

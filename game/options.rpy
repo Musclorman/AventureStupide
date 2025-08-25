@@ -26,7 +26,7 @@ define gui.show_name = True
 
 ## La version du jeu.
 
-define config.version = "0.2b"
+define config.version = "0.2c"
 
 
 ## Texte placé sur l'écran "À propos" du jeu. Placez le texte entre triples
@@ -41,6 +41,9 @@ Ce jeu est totalement gratuit et a été créé par un passionné qui a une vie 
 Ce jeu est humoristique et ne doit pas être pris au sérieux. Il n'est pas déstiné aux jeunes enfants et peut contenir des références a des sujets un peu trash.
 
 Sur ce... AMUSEZ-VOUS BIEN!
+
+Liens officiels du jeu:
+{a=https://musclor13.itch.io/aventure-stupide/}itch.io{/a} {a=https://github.com/Musclorman/AventureStupide}github{/a}
 """)
 
 
@@ -57,15 +60,15 @@ define build.name = "AventureStupide"
 ## au joueur par défaut. Configurer l’un de ceux-ci à False (Faux) cachera le
 ## mixeur concerné.
 
-define config.has_sound = False
-define config.has_music = False
+define config.has_sound = True
+define config.has_music = True
 define config.has_voice = False
 
 
 ## Pour autoriser le joueur à réaliser un test de volume, décommenter la ligne
 ## ci-dessous et utilisez-la pour configurer un son d’exemple.
 
-# define config.sample_sound = "sample-sound.ogg"
+define config.sample_sound = "sample-sound.ogg"
 # define config.sample_voice = "sample-voice.ogg"
 
 
@@ -73,7 +76,7 @@ define config.has_voice = False
 ## diffusé quand le joueur sera sur le menu principal. Ce son se poursuivra dans
 ## le jeu, jusqu’à ce qu'il soit stoppé ou qu’un autre fichier soit joué.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "main-menu-theme.ogg"
 
 
 ## Transitions #################################################################

@@ -29,6 +29,12 @@ transform DtoUxlow:
     yalign 1.0
     linear 20 yalign 0.0
 
+transform UtoDxlow:
+    xalign 0.5
+    zoom 1
+    yalign 0.0
+    linear 20 yalign 1.0
+
 transform DtoUlow:
     xalign 0.5
     zoom 1
