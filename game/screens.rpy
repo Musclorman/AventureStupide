@@ -27,6 +27,9 @@ style gui_text:
 
 style button:
     properties gui.button_properties("button")
+    hover_sound "audio/buttonhover.ogg"
+    activate_sound "audio/buttonactivate.ogg"
+
 
 style button_text is gui_text:
     properties gui.text_properties("button")
@@ -54,21 +57,29 @@ style scrollbar:
     ysize gui.scrollbar_size
     base_bar Frame("gui/scrollbar/horizontal_[prefix_]bar.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
     thumb Frame("gui/scrollbar/horizontal_[prefix_]thumb.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
+    hover_sound "audio/buttonhover.ogg"
+    activate_sound "audio/buttonactivate.ogg"
 
 style vscrollbar:
     xsize gui.scrollbar_size
     base_bar Frame("gui/scrollbar/vertical_[prefix_]bar.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
     thumb Frame("gui/scrollbar/vertical_[prefix_]thumb.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
+    hover_sound "audio/buttonhover.ogg"
+    activate_sound "audio/buttonactivate.ogg"
 
 style slider:
     ysize gui.slider_size
     base_bar Frame("gui/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
     thumb "gui/slider/horizontal_[prefix_]thumb.png"
+    hover_sound "audio/buttonhover.ogg"
+    activate_sound "audio/buttonactivate.ogg"
 
 style vslider:
     xsize gui.slider_size
     base_bar Frame("gui/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
     thumb "gui/slider/vertical_[prefix_]thumb.png"
+    hover_sound "audio/buttonhover.ogg"
+    activate_sound "audio/buttonactivate.ogg"
 
 
 style frame:

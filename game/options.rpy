@@ -26,7 +26,7 @@ define gui.show_name = True
 
 ## La version du jeu.
 
-define config.version = "0.2c"
+define config.version = "0.3a"
 
 
 ## Texte placé sur l'écran "À propos" du jeu. Placez le texte entre triples
@@ -122,7 +122,7 @@ define config.end_game_transition = fade
 ## Après le début de la partie, cela peut-être changé avec les instructions
 ## « window show », « window hide » et « window auto ».
 
-define config.window = "auto"
+define config.window = "hide"
 
 
 ## Transitions utilisées pour afficher ou cacher la fenêtre de dialogue
@@ -134,7 +134,9 @@ define config.window_hide_transition = Dissolve(.2)
 ## Préférences par défaut ######################################################
 
 ## Pas de rollback
-define config.rollback_enabled = False
+define config.rollback_enabled = True
+define config.hard_rollback_limit = 1
+
 
 ## Contrôle la vitesse du texte. La valeur par défaut, 0, est infinie. Toute
 ## autre valeur est le nombre de caractères tapés par seconde.

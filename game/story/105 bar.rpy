@@ -1,5 +1,6 @@
 label extbar:
     image extbarscene = At("BG/Barext.jpg", DtoUxlow)
+    stop music fadeout 20
     image barscene = At("BG/Bar.jpeg", UtoDxlow)
     scene extbarscene
     image voisine = At("PNJ/Voisine.webp", top)
@@ -74,6 +75,7 @@ label bar2:
     if item == "vodka-rhum":
         "Barman" "DEBOUT IVROGNE! LE COMPTOIR N'EST PAS UN LIT!"
     scene barscene
+    play music "Music/Loozer.ogg"
     "Vous vous réveillez dans le bar, allongé sur le comptoir a coté de votre[item] vide. Vous avez l'impression d'avoir dormi pendant des heures."
     "Alors que vous essayez de vous lever, le barman attrape par les chevilles et vous traine comme un linge sale jusqu'au trottoir avant de claquer la porte en jurant."
     play sound "FX/Boum.ogg"

@@ -19,10 +19,14 @@ define dd = Character(_("Faucheuse"), color="#ea00ff", image="image_faucheuse")
 label intro:
     $ item=""
     scene intro
+    if cle==False:
+        play music "Music/Piano.ogg"
     if cle==True:
+        play music "Music/Techno.ogg"
         play sound "FX/Boum.ogg"
         "BANG! Vous vous réveillez en sursaut dans votre lit. Quelqu'un vous a lancé vos clé d'appartement en pleine figure... Mais vous ne voyez personne! A moitier sonné, vous regardez autours de vous..."
     if mort == 0:
+        play sound "FX/Cuicui.ogg"
         pause 10
         "Le soleil se lève et une merveilleuse journée commance. Les oiseaux chantent que rien de mal ne va arriver."
     else:
@@ -31,6 +35,7 @@ label intro:
         "C'est un bon jour pour sortir de son appartement mais que faire."
         "Prendre un petit dejeuner":
             scene Cuisine
+            play sound "FX/Talons.ogg"
             "Vous allez en direction de la cuisine a la vitesse d'une limace au galop."
             menu:
                     "Vous n'avez rien dans votre frigo"

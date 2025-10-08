@@ -25,8 +25,10 @@ label lsd1:
             "Mais il semble que vous ne nagez pas tout seul"
             image crocodile = At("BG/Crocodile.jpeg", DtoUxlow)
             scene crocodile
+            play music "Music/HardRock.ogg"
             "Un crocodile géant surgit de l'eau et vous attaque!"
             "Vous essayez de nager pour échapper à la bête mais elle est trop rapide."
+            play sound "FX/BangE.ogg"
             "Vous sentez ses dents se refermer sur vous et tout devient noir..."
             jump bar2
         "Direction la les profondeurs de la forêt":
@@ -36,6 +38,7 @@ label lsd1:
             "Vous décidez de vous diriger vers une clairière que vous apercevez au loin."
             image princessedesbois = At("BG/Princesse 2.jpeg", DtoUxlow)
             scene princessedesbois
+            play music "Music/Love.ogg"
             "Une belle demoiselle assise sur un trone semble vous attendre."
             "Ca doit être une princesse ou une fée"
             menu:
@@ -55,4 +58,5 @@ label lsd1:
             image cavemort  = At("bg/CaveMort.jpeg")
             scene cavemort
             "Ce lieux vous rappelle un endroit famillier... mais vous glissez et tombez le nez sur la pierre a moins de 10 mêtres de l'entrée"
+            play sound "FX/Chute.ogg"
             jump bar2

@@ -3,18 +3,23 @@ label zetemort0:
     $ mort += 1
     if mort == 1 :
         "Vous vous trouvez dans un genre d'endroit sombre et froid. Vvous voyez un genre de squelette sinistre s'avancer vers vous."
+        play music "Music/DanseNulle.ogg"
         dd "Salut. Je ne t'ai jamais vu ici. Tu viens de mourir ? Tu sait ou t'es au moins?"
     if mort == 2 :
+        play music "Music/DanseNulle.ogg"
         "Vous vous retrouvez face au squelette qui vous regarde d'un air amusé."
         dd "déjà de retour [nom]? Je t'avais manqué? Tu n'as pas l'air d'avoir appris de tes erreurs. Tu sais que tu es mort, n'est-ce pas?"
     if mort == 3 :
+        play music "Music/DanseNulle.ogg"
         "Vous vous retrouvez face au squelette qui vous regarde d'un air un peut lassé."
         dd "Encore [nom]... Tu n'as toujours pas l'air d'avoir appris de tes erreurs."
     if mort == 4 :
+        play music "Music/DanseNulle.ogg"
         "Vous vous retrouvez encore face au squelette."
         dd "Bon... T'es vraiment un abruti fini alors j'ai un petit cadeau pour toi. Tu veut ta clé perdue de ton appart? Tu l'aura a ton reveil."
         $ cle=True
     if mort >= 5 :
+        play music "Music/DanseNulle.ogg"
         "Vous vous retrouvez face au squelette qui vous regarde d'un air exaspéré."
         dd "Je n'ai jamais vu un client aussi idiot. T'a la clé? Alors tu va pouvoir sortir de ton appart."
         $ cle=True
@@ -47,19 +52,28 @@ label zetemort0:
                 dd "Bon, comme t'a l'air marrant je vais te faire remonter le temps afin que tu puisse revivre et éviter de mourir comme un idiot."
     if mort > 0 :
         dd "Par le pouvoir du crâne ancestral qui est le mien, je te réssuscite et te renvoie dans le passé! A plus dans l'bus [nom]!"
+        stop music fadeout 1
+        play sound "FX/DJ.ogg"
     if mort >= 5:
-        dd "Ah et vu que t'avait pas trouvé ta clé je vais te la relancer en pleine tronche en y allant fort cette fois! Tu devrait pas la louper!"
+        dd "Ah et vu que t'a l'air de ne pas avoir trouvé ta clé je vais te la relancer en pleine tronche en y allant fort cette fois! Tu devrait pas la louper!"
         $ cle=True
     jump intro
 label zetemort1:
     scene cavemort
     $ mort += 1
     if mort == 1 :
+        play sound "FX/TocVide.ogg"
         dd "Serieux [nom] je t'aide, je te donne ta clé et tu meurs 2 minutes après? T'a pas une malédiction ou un truc du genre? Appelle un exorciste!"
+        play sound "FX/TocVide.ogg"
         dd "Bon ba... Je te renvois dans ta rue pour que tu puisse mourir de nouveau. Moi je t'observe de loin avec mes popcorns et je me marre comme un fou!"
+        play music "Music/DanseNulle.ogg"
         dd "Je change de formule et j'invoque le grand portail pour te ramener la ou tu devrait être. Au revoir dans l'autocar [nom]!"
+        stop music fadeout 1
+        play sound "FX/DJ.ogg"
         jump ville
     if mort >= 2 :
         dd "Coucou [nom] je suis toujours là!"
         dd "J'invoque toujours ce grand portail pour te ramener la ou tu devrait être. Au revoir dans l'autocar [nom]!"
+        stop music fadeout 1
+        play sound "FX/DJ.ogg"
         jump ville
